@@ -10,4 +10,3 @@
 - Comentar box 
 
 # Butuh orang yg mau build codenime lgi bang
-# Jangan di colong pepek
