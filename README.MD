@@ -10,5 +10,3 @@
 # Optional To Do 
 - Reaction setiap artikel
 - Isi samping artikel 
-
-# Butuh orang yg mau build codenime lgi bang
