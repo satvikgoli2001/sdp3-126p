@@ -35,6 +35,15 @@ app.get('/dibilangin', async(req, res) => {
     res.send("Never gonna' give you up\nNever gonna' let you down\nNever gonna' run around\nand desert you")
 })
 
+app.use(function (req, res){
+  res.status(404);
+ 
+  if (req.accepts('html')) {
+    res.sendFile(__dirname + '/views/404.html');
+    return;
+  }
+});
+
 const listener = app.listen(3000, () => {
     console.log("Your app is listening on port http://localhost:" + listener.address().port);
   });
