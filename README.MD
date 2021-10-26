@@ -1,4 +1,4 @@
-# https://progress.codenime.xyz
+# https://codenime.xyz
 # WORK IN PROGRESS
 
 # To Do
