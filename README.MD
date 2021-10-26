@@ -3,10 +3,7 @@
 
 # To Do
 
-- Perbagus (Add artikel dll)
+- Perbagus (Add artikel, page dll)
 - Lengkapi page
-- Domain
-
-# Optional To Do 
 - Reaction setiap artikel
-- Isi samping artikel 
+- Category
