@@ -41,6 +41,10 @@ app.get('/github', async(req, res) => {
    res.redirect('https://github.com/CodeNime')
 })
 
+app.get('/discord', async(req, res) => {
+   res.redirect('https://discord.gg/XYjacbW3rj')
+})
+
 app.use(function (req, res){
   res.status(404);
  
