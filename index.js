@@ -37,7 +37,7 @@ app.get('/dibilangin', async(req, res) => {
 
 app.use(function (req, res){
   res.status(404);
-  
+ 
   if (req.accepts('html')) {
     res.sendFile(__dirname + '/views/404.html');
     return;
