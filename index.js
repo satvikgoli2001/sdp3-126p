@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const db = require('quick.db')
+const chalk = require('chalk');
 
 app.use(express.static('public'))
 
@@ -12,6 +13,7 @@ setInterval(function() {
 
 app.get('/', async(req, res) => {
     res.sendFile(__dirname + '/views/index.html')
+
 })
 
 app.get('/base', async(req, res) => {
@@ -45,5 +47,8 @@ app.use(function (req, res){
 });
 
 const listener = app.listen(3000, () => {
-    console.log("Your app is listening on port http://localhost:" + listener.address().port);
+    console.log(chalk.cyan("[ EXPRESS ] ") + "Your app is listening on port " + listener.address().port);
+    
+   console.log(chalk.cyan(" [ READY ] ") + "https://codenime.xyz");
   });
+
