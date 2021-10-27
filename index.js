@@ -45,6 +45,10 @@ app.get('/discord', async(req, res) => {
    res.redirect('https://discord.gg/XYjacbW3rj')
 })
 
+app.get('/facebook', async(req, res) => {
+   res.redirect('https://facebook.com/codenime.xyz')
+})
+
 app.use(function (req, res){
   res.status(404);
  
