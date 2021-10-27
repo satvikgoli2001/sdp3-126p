@@ -61,6 +61,6 @@ app.use(function (req, res){
 const listener = app.listen(3000, () => {
     console.log(chalk.cyan("[ EXPRESS ] ") + "Your app is listening on port " + listener.address().port);
     
-   console.log(chalk.cyan(" [ READY ] ") + "https://codenime.xyz");
+   console.log(chalk.cyan("[ READY ] ") + "https://codenime.xyz");
   });
 
