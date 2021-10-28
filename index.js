@@ -32,10 +32,6 @@ res.sendFile(__dirname + '/views/artikel/base.html')
 })
 
 
-app.get('/dibilangin', async(req, res) => {
-    res.send("Never gonna' give you up\nNever gonna' let you down\nNever gonna' run around\nand desert you")
-})
-
 app.get('/github', async(req, res) => {
    res.redirect('https://github.com/CodeNime')
 })
