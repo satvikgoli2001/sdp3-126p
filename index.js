@@ -20,13 +20,15 @@ app.get('/base', async(req, res) => {
     if(!req.query.q) {
        db.add('base', 1)
 res.sendFile(__dirname + '/views/artikel/base.html')
-} else if(req.query.q === "count")
-
-   res.status(200).json({
+} else if(req.query.q === "count") {
+ res.status(200).json({
     data: {
         count: db.fetch('base')
     }
     }) 
+} else {
+  res.status(400).sendFile(__dirname + '/views/http-err/400.html')
+}
 })
 
 app.get('/test', async(req, res) => {
@@ -53,7 +55,7 @@ app.use(function (req, res){
   res.status(404);
  
   if (req.accepts('html')) {
-    res.sendFile(__dirname + '/views/404.html');
+    res.sendFile(__dirname + '/views/http-err/404.html');
     return;
   }
 });
@@ -63,4 +65,3 @@ const listener = app.listen(3000, () => {
     
    console.log(chalk.cyan("[ READY ] ") + "https://codenime.xyz");
   });
-
