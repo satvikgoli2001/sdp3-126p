@@ -1,3 +1,4 @@
+// Back To Top
 $(function () {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {
