@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*
 *
@@ -78,6 +78,7 @@ body {
     background-color: #eee !important;
     text-decoration: none;
 }
+
 
 .center {
     text-align: center;
@@ -175,14 +176,24 @@ body {
     background: lightblue;
   }
 
-.card {
+.cardd {
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
-.logo {
-    width: 300px;
+.ads {
+  margin-top: 10px;
+  height: 600px;
 }
+
+
+
+.logo {
+    width: 15rem;
+    margin-left: 100px;
+}
+
+
 
 /* Footer */
 .site-footer
@@ -356,4 +367,9 @@ html {
 .image-rounded {
   border-radius: 2%;
 }
+
+.margin-10px {
+  margin: 10px;
+}
+
 
