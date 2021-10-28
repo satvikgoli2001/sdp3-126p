@@ -38,7 +38,9 @@ if(!req.params.tag) {
    res.sendFile(__dirname + '/views/tags.html')
  } else if(req.params.tag === "tagName") { 
     res.sendFile(__dirname + '/views/tags/baseTags.html')
-  } 
+  } else {
+    res.sendFile(__dirname + '/views/http-err/404.html')
+  }
  
 })
 
