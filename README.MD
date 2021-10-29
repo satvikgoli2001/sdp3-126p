@@ -7,3 +7,4 @@
 - Lengkapi page
 - Reaction setiap artikel
 - Category
+- Navbar
