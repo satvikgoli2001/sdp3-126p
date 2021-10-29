@@ -44,6 +44,17 @@ if(!req.params.tag) {
  
 })
 
+app.get('/page/:num?', function (req, res) {
+  if(!req.params.num) {
+    res.redirect('https://codenime.xyz/')
+  } else if(req.params.num === "1") {
+    res.redirect('https://codenime.xyz/')
+  } else if(req.params.num === "2") {
+    res.sendFile(__dirname + '/views/page/2.html')
+  } else {
+    res.sendFile(__dirname + '/views/http-err/404.html')
+  }
+})
 
 app.get('/github', async(req, res) => {
    res.redirect('https://github.com/CodeNime')
