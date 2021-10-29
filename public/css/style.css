@@ -181,9 +181,17 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
+.m-10 {
+  margin: 10px;
+}
+
 .ads {
   margin-top: 10px;
   height: 600px;
+}
+
+.fz-17 {
+  font-size: 17px !important;
 }
 
 
@@ -371,5 +379,4 @@ html {
 .margin-10px {
   margin: 10px;
 }
-
 
