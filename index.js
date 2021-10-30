@@ -66,6 +66,10 @@ app.get('/projects/:project?', function (req, res) {
   }
 })
 
+app.get('/test', async(req, res) => {
+  res.sendFile(__dirname + '/views/test.html')
+})
+
 app.get('/github', async(req, res) => {
    res.redirect('https://github.com/CodeNime')
 })
