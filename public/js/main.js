@@ -27,3 +27,10 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+// using aos (animate on scroll)
+$(function() {
+  AOS.init({
+    duration: 1200,
+  });
+});
+
