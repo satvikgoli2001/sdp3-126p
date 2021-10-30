@@ -1,14 +1,17 @@
-// Back To Top
+// navbar
 $(function () {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {
             $('.navbar').addClass('active');
+            $('#navbutton').addClass('text-dark');
         } else {
             $('.navbar').removeClass('active');
+            $('#navbutton').removeClass('text-dark');
         }
     });
 });
 
+// Back To Top
 var btn = $('#button');
 
 $(window).scroll(function() {
