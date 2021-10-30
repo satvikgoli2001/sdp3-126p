@@ -56,6 +56,16 @@ app.get('/page/:num?', function (req, res) {
   }
 })
 
+app.get('/projects/:project?', function (req, res) {
+  if(!req.params.project) {
+    res.sendFile(__dirname + '/views/soon.html')
+  } else if(req.params.project === "projectName") {
+    res.sendFile(__dirname + '/views/soon.html')
+  } else {
+    res.sendFile(__dirname + '/views/http-err/404.html')
+  }
+})
+
 app.get('/github', async(req, res) => {
    res.redirect('https://github.com/CodeNime')
 })
