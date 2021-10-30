@@ -34,3 +34,8 @@ $(function() {
   });
 });
 
+// preloader
+//let ld = document.getElementById("loading-box")
+/* $(window).on('load', function (event) {
+        $('#loading-box').delay(1500).fadeOut(500);
+    }); */
