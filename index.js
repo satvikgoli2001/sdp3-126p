@@ -32,6 +32,7 @@ res.sendFile(__dirname + '/views/artikel/base.html')
 })
 
 app.get('/tags/:tag?', function (req, res) {
+
   // akan di perlengkap nanti saat sudah ada beberapa category terisi!
 if(!req.params.tag) {
    res.sendFile(__dirname + '/views/tags.html')
@@ -55,7 +56,7 @@ app.get('/page/:num?', function (req, res) {
   }
 })
 
-app.get('/projects/:project?', function (req, res) {
+app.get('/project/:project?', function (req, res) {
   if(!req.params.project) {
     res.sendFile(__dirname + '/views/soon.html')
   } else if(req.params.project === "projectName") {
@@ -81,6 +82,9 @@ app.get('/facebook', async(req, res) => {
    res.redirect('https://facebook.com/codenime.xyz')
 })
 
+app.get('/arc-sw.js', async(req, res) => {
+  res.sendFile(__dirname + '/arc-sw.js')
+})
 app.use(function (req, res){
   res.status(404);
  
