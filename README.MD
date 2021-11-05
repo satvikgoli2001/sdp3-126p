@@ -7,4 +7,3 @@
 - Lengkapi page
 - Reaction setiap artikel
 - Category
-- Preloader
